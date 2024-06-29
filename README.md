@@ -25,10 +25,10 @@ O projeto está estruturado da seguinte forma:
 
 ## Como Jogar
 
-1. Abra o arquivo `index.html` no seu navegador ou acesse o link do projeto hospedado.
+1. Abra o arquivo `index.html` no seu navegador ou acesse o link do projeto hospedado (https://memorygametheboys.netlify.app).
 2. Insira seu nome no campo de login.
 3. Clique no botão "Play" para começar o jogo.
 4. Encontre todos os pares de cartas idênticas antes que o tempo acabe.
 5. Ao final do jogo, um alerta informará se você venceu ou perdeu.
 
-Divirta-se jogando o Jogo da Memória! 🃏🧠
+Divirta-se!!

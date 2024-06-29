@@ -8,7 +8,9 @@ const grid = document.querySelector(".grid"),
   };
 let loop,
   firstCard = "",
-  secondCard = "";
+  secondCard = "",
+  bgMusic = document.getElementById('bgMusic'); // Seleciona o elemento de áudio
+
 const resultUrlFinish = "../pages/finish.html",
   resultUrlGameOver = "../pages/gameOver.html",
   redirectToIndexPage = () => {
@@ -21,7 +23,8 @@ const resultUrlFinish = "../pages/finish.html",
       alert(
         `Parabéns, ${spanPlayer.innerHTML}! Seu tempo restante de 40s foi de: ${timer.innerHTML}`
       ),
-      alert("O jogo foi conclu\xEDdo com sucesso!"),
+      alert("O jogo foi concluído com sucesso!"),
+      bgMusic.pause(), // Pausa a música quando o jogo termina
       redirectToIndexPage());
   },
   checkCards = () => {
@@ -83,11 +86,15 @@ const resultUrlFinish = "../pages/finish.html",
             ),
             clearInterval(loop),
             alert("O tempo acabou! Game Over!"),
+            bgMusic.pause(), // Pausa a música quando o tempo acaba
             redirectToIndexPage());
       }, 1e3));
   };
+
+// Inicia a música quando a página carregar
 window.onload = () => {
   (spanPlayer.innerHTML = localStorage.getItem("player")),
     startTimer(),
-    loadGame();
+    loadGame(),
+    bgMusic.play(); // Inicia a música
 };

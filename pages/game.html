@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/styles/game.css" />
-    <link rel="stylesheet" href="/styles/reset.css" />
+  <link rel="stylesheet" href="/styles/game.css" />
+  <link rel="stylesheet" href="/styles/reset.css" />
 
-    <script defer src="/src/game.js"></script>
+  <script defer src="/src/game.js"></script>
 
-    <link rel="icon" href="/img/icont.ico" type="imagem/png" />
+  <link rel="icon" href="/img/icont.ico" type="image/png" />
 
-    <title>Jogo da Memória</title>
-  </head>
-  <body>
-    <main>
-      <header>
-        <span class="player"></span>
-        <span>Tempo: <span class="timer">00</span></span>
-      </header>
-      <div class="grid"></div>
-    </main>
-  </body>
+  <title>Jogo da Memória</title>
+</head>
+<body>
+  <main>
+    <header>
+      <span class="player"></span>
+      <span>Tempo: <span class="timer">00</span></span>
+    </header>
+    <div class="grid"></div>
+  </main>
+
+  <!-- Adicione a tag audio para a música -->
+  <audio id="bgMusic" loop autoplay>
+    <source src="/src/audio/Maniac (128).mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</body>
 </html>
